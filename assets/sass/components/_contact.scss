@@ -1,0 +1,34 @@
+.contact {
+    padding: 90px 0;
+}
+
+.contact__info {
+    margin: 40px 0 50px;
+}
+
+.contact__info-item {
+    margin-bottom: 20px;
+
+    p,
+    a {
+        color: $grey-dark;
+    }
+}
+
+.contact__form {
+    margin-bottom: 40px;
+
+    input,
+    textarea {
+        padding: 10px 15px;
+        width: 100%;
+    }
+
+    textarea {
+        height: 180px;
+    }
+}
+
+.contact__form-field {
+    margin-bottom: 15px;
+}

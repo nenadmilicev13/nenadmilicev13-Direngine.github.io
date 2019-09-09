@@ -1,0 +1,166 @@
+@font-face {
+	font-family: "fonticons";
+	src: url('assets/icons/fonticons.woff2') format('woff2'), url('assets/icons/fonticons.woff') format('woff'), url('assets/icons/fonticons.ttf') format('truetype');;
+}
+
+@mixin font-styles {
+	font-family: "fonticons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%font {
+	@include font-styles;
+}
+
+@function font-char($filename) {
+	$char: "";
+
+	@if $filename == avatar {
+		$char: "\E001";
+	}
+	@if $filename == back {
+		$char: "\E002";
+	}
+	@if $filename == contact {
+		$char: "\E003";
+	}
+	@if $filename == detective {
+		$char: "\E004";
+	}
+	@if $filename == facebook {
+		$char: "\E005";
+	}
+	@if $filename == fork {
+		$char: "\E006";
+	}
+	@if $filename == guarantee {
+		$char: "\E007";
+	}
+	@if $filename == hotel {
+		$char: "\E008";
+	}
+	@if $filename == instagram {
+		$char: "\E009";
+	}
+	@if $filename == like {
+		$char: "\E00A";
+	}
+	@if $filename == map {
+		$char: "\E00B";
+	}
+	@if $filename == meeting-point {
+		$char: "\E00C";
+	}
+	@if $filename == next {
+		$char: "\E00D";
+	}
+	@if $filename == placeholder {
+		$char: "\E00E";
+	}
+	@if $filename == quote-left {
+		$char: "\E00F";
+	}
+	@if $filename == search {
+		$char: "\E010";
+	}
+	@if $filename == shopping-bag {
+		$char: "\E011";
+	}
+	@if $filename == star {
+		$char: "\E012";
+	}
+	@if $filename == star2 {
+		$char: "\E013";
+	}
+	@if $filename == tel {
+		$char: "\E014";
+	}
+	@if $filename == twitter {
+		$char: "\E015";
+	}
+
+	@return $char;
+}
+
+@mixin font($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %font;
+		} @else {
+			@include font-styles;
+		}
+		content: font-char($filename);
+	}
+}
+
+.font-avatar {
+	@include font(avatar);
+}
+.font-back {
+	@include font(back);
+}
+.font-contact {
+	@include font(contact);
+}
+.font-detective {
+	@include font(detective);
+}
+.font-facebook {
+	@include font(facebook);
+}
+.font-fork {
+	@include font(fork);
+}
+.font-guarantee {
+	@include font(guarantee);
+}
+.font-hotel {
+	@include font(hotel);
+}
+.font-instagram {
+	@include font(instagram);
+}
+.font-like {
+	@include font(like);
+}
+.font-map {
+	@include font(map);
+}
+.font-meeting-point {
+	@include font(meeting-point);
+}
+.font-next {
+	@include font(next);
+}
+.font-placeholder {
+	@include font(placeholder);
+}
+.font-quote-left {
+	@include font(quote-left);
+}
+.font-search {
+	@include font(search);
+}
+.font-shopping-bag {
+	@include font(shopping-bag);
+}
+.font-star {
+	@include font(star);
+}
+.font-star2 {
+	@include font(star2);
+}
+.font-tel {
+	@include font(tel);
+}
+.font-twitter {
+	@include font(twitter);
+}
+

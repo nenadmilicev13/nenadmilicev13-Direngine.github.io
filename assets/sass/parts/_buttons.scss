@@ -1,0 +1,125 @@
+/*--------------------------------------------------------------
+## Buttons
+--------------------------------------------------------------*/
+.btn {
+    display: inline-block;
+    padding: 15px 36px;
+    transition: $dur $ease;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 7px 15px;
+        font-size: 11px;
+	}
+}
+
+.btn--red {
+    padding: 25px 10px;
+    background-color: $red;
+    color: $white;
+    width: 160px;
+    display: block;
+    font-size: 16px;
+    text-transform: capitalize;
+
+    @include mq($tablet-l) {
+       padding: 18px 10px;
+       margin-top: 20px;
+    }
+
+    @include mq($phone) {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+.btn-lg {
+    background-color: $red;
+    color: $white;
+    width: 100%;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    border: 1px solid $red;
+    transition: $dur $ease;
+    border-radius: 2px;
+    padding: 20px 40px;
+
+    &:hover {
+        background-color: $white;
+        color: $red;
+    }
+} 
+
+.btn--green {
+    padding: 3px 5px;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: $green;
+    color: $white;
+    text-transform: capitalize;
+    transition: $dur $ease;
+
+    &:hover {
+        background-color: $green-dark;
+    }
+}
+
+.btn--ghost {
+    background-color: transparent;
+    border: 1px solid $red;
+    color: $red;
+    padding: 12px 20px;
+    text-transform: capitalize;
+    border-radius: 100px;
+    font-size: 16px;
+    transition: $dur $ease;
+
+    &:hover {
+        background-color: $red;
+        color: $white;
+    }
+
+    @include mq($phone) {
+        font-size: 14px;
+        padding: 9px 10px;
+    }
+}
+
+.btn--fill {
+    background-color: $red;
+    border: 1px solid $red;
+    color: $white;
+    padding: 15px 60px;
+    text-transform: capitalize;
+    border-radius: 100px;
+    font-size: 16px;
+    transition: $dur $ease;
+
+    &:hover {
+        background-color: $white;
+        color: $red;
+    }
+
+    @include mq($phone) {
+        font-size: 14px;
+        padding: 9px 10px;
+    }
+}
+
+.btn--subscribe {
+    padding: 9px 36px;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: $white;
+    outline: none;
+    border: 1px solid $white;
+    font-size: 16px;
+}

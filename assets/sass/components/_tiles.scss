@@ -1,0 +1,87 @@
+.tiles {
+    background-color: $blue-light;
+    padding-bottom: 120px;
+
+    @include mq($tablet-l) {
+        padding-bottom: 40px;
+    }
+
+    @include mq($phone) {
+        padding-bottom: 20px;
+    }
+}
+
+.tile-item {
+    background-color: $white;
+    padding: 30px 25px;
+    transition: $dur $ease;
+    transform: translateY(-35px);
+    min-height: 330px;
+
+    &:hover {
+        background-color: $red;
+        color: $white;
+
+        .tile-item__icon {
+            color: $white;
+        }
+
+        .tile-item-text {
+            color: $white;
+        }
+    }
+
+    @include mq($tablet-l) {
+        margin-bottom: 25px;
+        min-height: auto;
+    }
+
+    @include mq($phone) {
+        transform: translateY(-20px);
+    }
+}
+
+.tile-item__icon {
+    font-size: 60px;
+    color: $red;
+    transition: $dur $ease;
+    display: block;
+    text-align: center;
+    margin-bottom: 21px;
+
+    @include mq($phone) {
+       font-size: 50px;
+    }
+}
+
+.tile-item__title {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    max-width: 180px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 30px;
+
+    @include mq($phone) {
+      font-size: 18px;
+      margin: 0 auto 15px;
+      max-width: 100%;
+    }
+}
+
+.tile-item-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: $grey-dark;
+    transition: $dur $ease;
+    max-width: 163px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include mq($phone) {
+        max-width: 100%;
+        text-align: center;
+      }
+}

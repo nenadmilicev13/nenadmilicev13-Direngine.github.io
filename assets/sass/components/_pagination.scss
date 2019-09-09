@@ -1,0 +1,42 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        display: inline-block;
+        color: $red;
+    }
+
+    @include mq($tablet-l) {
+        width: 100%;
+    }
+
+    @include mq($phone) {
+        font-size: 13px;
+    }
+}
+
+.pagination--top {
+    margin: 40px auto;
+}
+
+.pagination__item {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid$red-light;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mq($phone) {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.pagination__item--activ {
+    background-color: $red-light;
+}

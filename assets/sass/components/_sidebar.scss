@@ -1,0 +1,32 @@
+.sidebar {
+    padding: 25px;
+    margin-bottom: 35px;
+    background-color: $blue-light;
+}
+
+.sidebar__title {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-bottom: 33px;
+}
+
+.sidebar__stars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sidebar__stars-wrap {
+    margin-left: 12px;
+}
+
+.sidebar__stars-icon {
+    font-size: 14px;
+    margin: 0 4px;
+    color: $red;
+}
+
+.sidebar__stars-icon--white {
+    color: $red;
+}

@@ -1,0 +1,43 @@
+.section-head {
+    @include mq($tablet-l) {
+        padding-left: 20px;
+    }
+
+    @include mq($phone) {
+        padding-left: 0;
+    }
+
+}
+
+.section-head--center {
+    @include mq($tablet-l) {
+       text-align: center;
+    }
+}
+
+.section-head__pretitle {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: $grey-dark;
+}
+
+.section-head__title {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 24px;
+
+    span {
+        font-weight: 700;
+    }
+
+    @include mq($tablet-l) {
+      font-size: 25px;
+    }
+    
+    @include mq($phone) {
+        font-size: 20px;
+    }
+}

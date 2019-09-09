@@ -1,0 +1,8 @@
+.tour-hotels {
+    padding: 90px 0 30px;
+    position: relative;
+
+    @include mq($tablet-l) {
+       padding: 20px 0;
+    }
+}

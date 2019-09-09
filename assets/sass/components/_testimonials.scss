@@ -1,0 +1,140 @@
+.testimonials {
+    padding: 90px 0;
+    background-color: $blue-light;
+
+    .slick-dots {
+        @include center(x, absolute);
+        bottom: -20px;
+
+        &:focus {
+            outline: none;
+            color: $light;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 5px;
+
+            &:only-child {
+                display: none;
+            }
+        }
+
+        button {
+            width: 11px;
+            min-width: initial;
+            height: 11px;
+            padding: 0;
+            border: 1px solid $light;
+            border-radius: 50%;
+            background-color: transparent;
+            line-height: 9px;
+            text-indent: -2000em;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+	li.slick-active button {
+		background-color: $grey70;
+    }
+
+    .slick-list {
+        margin: 0 -15px;
+    }
+
+    @include mq($tablet-l) {
+        padding: 50px 0 20px;
+    }
+}
+
+.testimonials__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mq($phone) {
+       display: block;
+    }
+}
+
+.testimonial__item {
+    flex: 0 0 50%;
+    max-width: 50%;
+
+    @include mq($phone) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+.testimonials__section {
+    position: relative;
+}
+
+.testimonial__content {
+    max-width: 443px;
+    width: 100%;
+}
+
+.testimonial-btn {
+    margin-top: 50px;
+
+    @include mq($phone) {
+        margin-top: 25px;
+    }
+}
+
+.testimonial__wrapp {
+    background-color: $white;
+    padding: 30px;
+    position: relative;
+
+    img {
+        width: 95px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 30px;
+        display: block;
+    }
+
+    &:hover {
+        .slider-arrow-left,
+        .slider-arrow-right {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+    }
+
+    &.slick-slide {
+        outline: none;
+    }
+
+    @include mq($phone) {
+       img {
+           margin-right: 0;
+       }
+    }
+}
+
+.testimonial__inner {
+    display: flex;
+
+}
+
+.testimonial__name {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 60px 0 7px;
+}
+
+.testimonial__position {
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+}

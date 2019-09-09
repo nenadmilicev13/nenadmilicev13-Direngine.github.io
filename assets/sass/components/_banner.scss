@@ -1,0 +1,189 @@
+.banner {
+    background-image: url('assets/images/bg_1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 650px;
+    position: relative;
+}
+
+.banner__content {
+    @include center(y, absolute);
+    max-width: 835px;
+}
+
+.banner__text {
+    @include center(xy, absolute);
+
+    @include mq($tablet-l) {
+        width: 100%;
+        text-align: center;
+     }
+}
+
+.banner__text-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > a {
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, .7);
+        margin-right: 8px;
+        border-bottom: 2px solid rgba($white, .1);
+    }
+
+    span {
+        text-transform: uppercase;
+        color: rgba($white, .7);
+        border-bottom: 2px solid rgba(255, 255, 255, .1);
+    }
+}
+
+.banner__text-title {
+    font-size: 60px;
+    line-height: 1.2;
+    color: $white;
+    font-family: $font-main;
+
+    @include mq($phone) {
+       font-size: 50px;
+    }
+}
+
+.banner__content-title {
+    font-size: 60px;
+    color: $white;
+    line-height: 1.2;
+    font-weight: 200;
+    margin-bottom: 30px;
+
+    @include mq($tablet-l) {
+        font-size: 50px;
+    }
+
+    @include mq($phone) {
+        font-size: 37px;
+    }
+}
+
+.banner__content-title-bold {
+    display: block;
+    font-weight: 800;
+}
+
+.banner__content-text {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+
+    @include mq($tablet-l) {
+        font-size: 18px;
+    }
+
+    @include mq($phone) {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+}
+
+.banner__form {
+    display: flex;
+    margin-bottom: 30px;
+
+    @include mq($tablet-l) {
+        display: block;
+    }
+
+    @include mq($phone) {
+        display: flex;
+    }
+}
+
+.banner__btn {
+    margin-right: 20px;
+}
+
+.banner__wrap {
+    display: flex;
+    align-items: center;
+
+    > a {
+        &:last-child {
+           .banner__box {
+               margin-right: 0;
+           }
+        }
+    }
+
+    @include mq($phone) {
+        display: block;
+        margin-top: 30px;
+    }
+}
+
+.banner__box-item {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    transition: $dur $ease;
+    margin-right: 15px;
+
+    &:hover {
+        background-color: $red;
+        color: $white;
+
+        .banner__box-item-icon {
+            color: $white;
+        }
+    }
+
+    @include mq($phone) {
+       margin-bottom: 15px;
+       max-width: 155px;
+    }
+}
+
+.banner__box-item-icon {
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 20px;
+    transition: $dur $ease;
+}
+
+.banner__box-item-name {
+    font-size: 16px;
+}
+
+.banner__form-select {
+    color: $grey70;
+    padding: 20px;
+    display: block;
+
+    @include mq($tablet-l) { 
+        margin-top: 20px;
+    }
+}
+
+.banner__form-select--sidebar {
+    max-width: 208px;
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid $grey70;
+    color: $grey-dark;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+    @include mq($tablet-l) { 
+        max-width: 100%;
+    }
+
+    @include mq($phone) {
+       max-width: 100%;
+    }
+}
+

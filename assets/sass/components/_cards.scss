@@ -1,0 +1,134 @@
+.cards {
+    padding: 90px 0;
+
+    .slick-dots {
+        @include center(x, absolute);
+        bottom: 0;
+
+        &:focus {
+            outline: none;
+            color: $light;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 5px;
+
+            &:only-child {
+                display: none;
+            }
+        }
+
+        button {
+            width: 11px;
+            min-width: initial;
+            height: 11px;
+            padding: 0;
+            border: 1px solid $light;
+            border-radius: 50%;
+            background-color: transparent;
+            line-height: 9px;
+            text-indent: -2000em;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+	li.slick-active button {
+		background-color: $grey70;
+    }
+
+    .slick-list {
+        margin: 0 -15px;
+    }
+
+    @include mq($tablet-l) {
+       padding: 50px 0;
+    }
+}
+
+.cards-section {
+    position: relative;
+
+    &:hover {
+        .slider-arrow-left,
+        .slider-arrow-right {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+    }
+}
+
+.cards__slider {
+    padding-bottom: 50px;
+}
+
+.card__item {
+    outline: none;
+    margin: 0 15px;
+    &:hover {
+        .zoom-icon {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.card-item__img {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+.card__item-info {
+    background-color: $white;
+    border: 1px solid $light;
+    width: 100%;
+    padding: 25px 20px;
+
+    @include mq($phone) {
+       max-width: 100%;
+    }
+}
+
+.card__item-info-title {
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 400;
+}
+
+.card__item-info-listing {
+    display: block;
+    font-weight: 300;
+}
+
+.arrow-left,
+.arrow-right {
+    color: $red;
+    font-size: 25px;
+}
+
+.slider-arrow-left,
+.slider-arrow-right {
+    @include center(y, absolute);
+    opacity: 0;
+    visibility: visible;
+    transition: $dur $ease;
+    cursor: pointer;
+}
+
+.slider-arrow-left {
+    left: 25px;
+    transform: translateX(-25px);
+}
+
+.slider-arrow-right {
+    right: 25px;
+    transform: translateX(25px);
+}

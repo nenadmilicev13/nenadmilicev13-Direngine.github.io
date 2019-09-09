@@ -1,0 +1,52 @@
+.subscribe {
+    position: relative;
+    background: linear-gradient(135deg, $blue-green 0%, $pastel-green 100%);
+    padding: 90px 0;
+
+    @include mq($tablet-l) {
+        padding: 50px 0;
+    }
+}
+
+.subscribe__content {
+    max-width: 741px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+
+    @include mq($phone) {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+.subscribe__title {
+    font-size: 40px;
+    color: $white;
+    line-height: 1.5;
+    margin-bottom: 28px;
+
+    @include mq($tablet-l) {
+       font-size: 35px;
+    }
+
+    @include mq($phone) {
+        font-size: 25px;    
+    }
+}
+
+.subscribe__subtitle {
+    font-weight: 300;
+    line-height: 25px;
+    color: rgba($white, .9);
+
+    @include mq($phone) {
+        font-size: 14px;    
+    }
+}
+
+.subscribe__form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}

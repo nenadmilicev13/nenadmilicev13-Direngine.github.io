@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link href="favicon.ico" rel="icon" />
+	<title>Direngine</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="dist/plugins.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="main-header js-main-header">
+		<div class="wrapper">
+			<div class="main-header-btn js-main-header-btn">
+				<button class="menu-btn"><span></span></button>
+			</div>
+			<div class="main-header__container">
+				<a href="index.html"><h1 class="main-header__logo">dirEngine.</h1></a>
+				<nav class="main-nav js-main-nav">
+					<ul class="main-nav__list">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a class="active" href="tour.html">Tour</a></li>
+						<li><a href="hotels.html">Hotels</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a class="nav-btn" href="javascript:;">Add listing</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div class="banner" style="background-image: url('assets/images/bg_3.jpg')">
+		<div class="wrapper">
+			<div class="banner__text">
+				<div class="banner__text-wrap">
+					<a href="index.html">Home</a>
+					<span>Tour</span>
+				</div>
+				<h3 class="banner__text-title">Destination</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="tour-hotels">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-lg-3 col-md-12">
+					<div class="sidebar">
+						<h3 class="sidebar__title">Find City</h3>
+						<label  class="sr-only" for="name">name</label>
+						<input  class="sidebar__input" id="name" type="text" placeholder="Destination, City">
+						<label  class="sr-only" for="name">name</label>
+						<select class="banner__form-select banner__form-select--sidebar">
+							<option value="select-location"> Select Location</option>
+							<option value="san-francisko"> San Francisco USA</option>
+							<option value="berlin-germany"> Berlin Germany</option>
+							<option value="london-united"> London United Kingdom</option>
+							<option value="paris-france"> Paris France</option>
+						</select>
+						<input type="text" id="datepicker" class="sidebar__input" placeholder="Date from">
+						<input type="text" id="datepicker2" class="sidebar__input" placeholder="Date to">
+						<button class="btn btn-lg">Search</button>
+					</div>
+
+					<div class="sidebar">
+						<h3 class="sidebar__title">Star Ratting</h3>
+						<div class="sidebar__stars">
+							<input type="checkbox" name="vehicle1">
+							<div class="sidebar__stars-wrap">
+								<span class="sidebar__stars-icon font-star"></span>
+								<span class="sidebar__stars-icon font-star"></span>
+								<span class="sidebar__stars-icon font-star"></span>
+								<span class="sidebar__stars-icon font-star"></span>
+								<span class="sidebar__stars-icon font-star"></span>
+							</div>
+						</div>
+						<div class="sidebar__stars">
+							<input type="checkbox" name="vehicle1">
+							<div class="sidebar__stars-wrap">
+								<span class="sidebar__stars-icon font-star"></span>
+								<span class="sidebar__stars-icon font-star"></span>
+								<span class="sidebar__stars-icon font-star"></span>
+								<span class="sidebar__stars-icon font-star"></span>
+								<span class="sidebar__stars-icon sidebar__stars-icon--white font-star2"></span>
+							</div>
+						</div>
+						<div class="sidebar__stars">
+							<input type="checkbox" name="vehicle1">
+							<div class="sidebar__stars-wrap">
+								<span class="sidebar__stars-icon font-star"></span>
+								<span class="sidebar__stars-icon font-star"></span>
+								<span class="sidebar__stars-icon font-star"></span>
+								<span class="sidebar__stars-icon sidebar__stars-icon--white font-star2"></span>
+								<span class="sidebar__stars-icon sidebar__stars-icon--white font-star2"></span>
+							</div>
+						</div>
+						<div class="sidebar__stars">
+							<input type="checkbox" name="vehicle1">
+							<div class="sidebar__stars-wrap">
+								<span class="sidebar__stars-icon font-star"></span>
+								<span class="sidebar__stars-icon font-star"></span>
+								<span class="sidebar__stars-icon sidebar__stars-icon--white font-star2"></span>
+								<span class="sidebar__stars-icon sidebar__stars-icon--white font-star2"></span>
+								<span class="sidebar__stars-icon sidebar__stars-icon--white font-star2"></span>
+							</div>
+						</div>
+						<div class="sidebar__stars">
+							<input type="checkbox" name="vehicle1">
+							<div class="sidebar__stars-wrap">
+								<span class="sidebar__stars-icon font-star"></span>
+								<span class="sidebar__stars-icon sidebar__stars-icon--white font-star2"></span>
+								<span class="sidebar__stars-icon sidebar__stars-icon--white font-star2"></span>
+								<span class="sidebar__stars-icon sidebar__stars-icon--white font-star2"></span>
+								<span class="sidebar__stars-icon sidebar__stars-icon--white font-star2"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="plate__container plate__container-sm">
+						<div class="plate__item plate__item-sm">
+							<a href="javascript:;">
+								<div class="plate__item-image">
+									<img src="assets/images/slider4.jpg" alt="">
+									<span class="zoom-icon font-search"></span>
+								</div>
+								<div class="plate__item-content">
+									<div class="plate__item-content-top">
+										<h3 class="plate__item-content-top-title">Paris, France</h3>
+										<span class="plate__item-content-price">$200</span>
+									</div>
+									<div class="plate__item-content-stars">
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<div class="plate__item-content-rating">
+											<span class="plate__item-rating">8 Rating</span>
+										</div>
+									</div>
+									<div class="entry-content plate__content">
+										<p>Far far away, behind the word mountains, far from the countries</p>
+									</div>
+									<span class="plate__item-duration">2 days 3 nights</span>
+									<div class="plate__item-info">
+										<span class="plate__item-info-icon"></span>
+									</div>
+									<div class="plate__item-bottom">
+										<div class="plate__item-content-bottom">
+											<span class="plate__item-bottom-icon font-map"></span>
+											<span class="plate__item-bottom-location">San Franciso, CA</span>
+										</div>
+										<div class="plate__item-bottom-btn">
+											<span class="btn btn--green">Discover</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="plate__item plate__item-sm">
+							<a href="javascript:;">
+								<div class="plate__item-image">
+									<img src="assets/images/slider5.jpg" alt="">
+									<span class="zoom-icon font-search"></span>
+								</div>
+								<div class="plate__item-content">
+									<div class="plate__item-content-top">
+										<h3 class="plate__item-content-top-title">Paris, France</h3>
+										<span class="plate__item-content-price">$200</span>
+									</div>
+									<div class="plate__item-content-stars">
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<div class="plate__item-content-rating">
+											<span class="plate__item-rating">8 Rating</span>
+										</div>
+									</div>
+									<div class="entry-content plate__content">
+										<p>Far far away, behind the word mountains, far from the countries</p>
+									</div>
+									<span class="plate__item-duration">2 days 3 nights</span>
+									<div class="plate__item-info">
+										<span class="plate__item-info-icon"></span>
+									</div>
+									<div class="plate__item-bottom">
+										<div class="plate__item-content-bottom">
+											<span class="plate__item-bottom-icon font-map"></span>
+											<span class="plate__item-bottom-location">San Franciso, CA</span>
+										</div>
+										<div class="plate__item-bottom-btn">
+											<span class="btn btn--green">Discover</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="plate__item plate__item-sm">
+							<a href="javascript:;">
+								<div class="plate__item-image">
+									<img src="assets/images/slider3.jpg" alt="">
+									<span class="zoom-icon font-search"></span>
+								</div>
+								<div class="plate__item-content">
+									<div class="plate__item-content-top">
+										<h3 class="plate__item-content-top-title">Paris, France</h3>
+										<span class="plate__item-content-price">$200</span>
+									</div>
+									<div class="plate__item-content-stars">
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<div class="plate__item-content-rating">
+											<span class="plate__item-rating">8 Rating</span>
+										</div>
+									</div>
+									<div class="entry-content  plate__content">
+										<p>Far far away, behind the word mountains, far from the countries</p>
+									</div>
+									<span class="plate__item-duration">2 days 3 nights</span>
+									<div class="plate__item-info">
+										<span class="plate__item-info-icon"></span>
+									</div>
+									<div class="plate__item-bottom">
+										<div class="plate__item-content-bottom">
+											<span class="plate__item-bottom-icon font-map"></span>
+											<span class="plate__item-bottom-location">San Franciso, CA</span>
+										</div>
+										<div class="plate__item-bottom-btn">
+											<span class="btn btn--green">Discover</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="plate__item plate__item-sm">
+							<a href="javascript:;">
+								<div class="plate__item-image">
+									<img src="assets/images/slider2.jpg" alt="">
+									<span class="zoom-icon font-search"></span>
+								</div>
+								<div class="plate__item-content">
+									<div class="plate__item-content-top">
+										<h3 class="plate__item-content-top-title">Paris, France</h3>
+										<span class="plate__item-content-price">$200</span>
+									</div>
+									<div class="plate__item-content-stars">
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<div class="plate__item-content-rating">
+											<span class="plate__item-rating">8 Rating</span>
+										</div>
+									</div>
+									<div class="entry-content  plate__content">
+										<p>Far far away, behind the word mountains, far from the countries</p>
+									</div>
+									<span class="plate__item-duration">2 days 3 nights</span>
+									<div class="plate__item-info">
+										<span class="plate__item-info-icon"></span>
+									</div>
+									<div class="plate__item-bottom">
+										<div class="plate__item-content-bottom">
+											<span class="plate__item-bottom-icon font-map"></span>
+											<span class="plate__item-bottom-location">San Franciso, CA</span>
+										</div>
+										<div class="plate__item-bottom-btn">
+											<span class="btn btn--green">Discover</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="plate__item plate__item-sm">
+							<a href="javascript:;">
+								<div class="plate__item-image">
+									<img src="assets/images/slider1.jpg" alt="">
+									<span class="zoom-icon font-search"></span>
+								</div>
+								<div class="plate__item-content">
+									<div class="plate__item-content-top">
+										<h3 class="plate__item-content-top-title">Paris, France</h3>
+										<span class="plate__item-content-price">$200</span>
+									</div>
+									<div class="plate__item-content-stars">
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<div class="plate__item-content-rating">
+											<span class="plate__item-rating">8 Rating</span>
+										</div>
+									</div>
+									<div class="entry-content  plate__content">
+										<p>Far far away, behind the word mountains, far from the countries</p>
+									</div>
+									<span class="plate__item-duration">2 days 3 nights</span>
+									<div class="plate__item-info">
+										<span class="plate__item-info-icon"></span>
+									</div>
+									<div class="plate__item-bottom">
+										<div class="plate__item-content-bottom">
+											<span class="plate__item-bottom-icon font-map"></span>
+											<span class="plate__item-bottom-location">San Franciso, CA</span>
+										</div>
+										<div class="plate__item-bottom-btn">
+											<span class="btn btn--green">Discover</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="plate__item plate__item-sm">
+							<a href="javascript:;">
+								<div class="plate__item-image">
+									<img src="assets/images/slider3.jpg" alt="">
+									<span class="zoom-icon font-search"></span>
+								</div>
+								<div class="plate__item-content">
+									<div class="plate__item-content-top">
+										<h3 class="plate__item-content-top-title">Paris, France</h3>
+										<span class="plate__item-content-price">$200</span>
+									</div>
+									<div class="plate__item-content-stars">
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<span class="plate__item-stars font-star"></span>
+										<div class="plate__item-content-rating">
+											<span class="plate__item-rating">8 Rating</span>
+										</div>
+									</div>
+									<div class="entry-content plate__content">
+										<p>Far far away, behind the word mountains, far from the countries</p>
+									</div>
+									<span class="plate__item-duration">2 days 3 nights</span>
+									<div class="plate__item-info">
+										<span class="plate__item-info-icon"></span>
+									</div>
+									<div class="plate__item-bottom">
+										<div class="plate__item-content-bottom">
+											<span class="plate__item-bottom-icon font-map"></span>
+											<span class="plate__item-bottom-location">San Franciso, CA</span>
+										</div>
+										<div class="plate__item-bottom-btn">
+											<span class="btn btn--green">Discover</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>	  
+					</div>
+					<div class="pagination">
+						<div class="pagination__item">
+							<a href="javascript:;">&laquo;</a>
+						</div>
+						<div class="pagination__item pagination__item--activ">
+							<a href="javascript:;">1</a>
+						</div>
+						<div class="pagination__item">
+							<a href="javascript:;">2</a>
+						</div>
+						<div class="pagination__item">
+							<a href="javascript:;">3</a>
+						</div>
+						<div class="pagination__item">
+							<a href="javascript:;">4</a>
+						</div>
+						<div class="pagination__item">
+							<a href="javascript:;">5</a>
+						</div>
+						<div class="pagination__item">
+							<a href="javascript:;">6</a>
+						</div>
+						<div class="pagination__item">
+							<a href="javascript:;">&raquo;</a>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="main-footer">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="main-footer__item">
+						<h2 class="main-footer__item-title">dirEngine</h2>
+						<p class="main-footer__item-text main-footer__item-text--sm">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						<div class="main-footer__item-media">
+							<a href="javascript:;"><span class="main-footer__item-icon font-twitter"></span></a>
+							<span class="main-footer__item-icon font-facebook"></span>
+							<span class="main-footer__item-icon font-instagram"></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="main-footer__item">
+						<h2 class="main-footer__item-title">Information</h2>
+						<ul class="main-footer__item-list">
+							<li><a href="javascript:;">About</a></li>
+							<li><a href="javascript:;">Service</a></li>
+							<li><a href="javascript:;">Terms and Conditions</a></li>
+							<li><a href="javascript:;">Become a partner</a></li>
+							<li><a href="javascript:;">Best Price Guarantee</a></li>
+							<li><a href="javascript:;">Privacy and Policy</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="main-footer__item">
+						<h2 class="main-footer__item-title">Customer Support</h2>
+						<ul class="main-footer__item-list">
+							<li><a href="javascript:;">FAQ</a></li>
+							<li><a href="javascript:;">Payment Option</a></li>
+							<li><a href="javascript:;">Booking Tips</a></li>
+							<li><a href="javascript:;">How it works</a></li>
+							<li><a href="javascript:;">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="main-footer__item">
+						<h2 class="main-footer__item-title">Have a Questions?</h2>
+						<div class="main-footer__item-text main-footer__item-text--icon">
+							<span class="icon font-placeholder"></span>
+							<div>
+								<p>203 Fake St. Mountain View,</p>
+								<p>San Francisco, California,</p>
+								<p>USA</p>
+							</div>
+						</div>
+						<ul>
+							<li><a class="main-footer__item-link main-footer__item-link--tel" href="tel:+23923929210"><span class="icon font-tel"></span>+2 392 3929 210</a></li>
+							<li><a class="main-footer__item-link main-footer__item-link--mail" href="mailto:info@yourdomain.com"><span class="icon font-contact"></span>info@yourdomain.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<p class="main-footer__bottom">Copyright ©2019 All rights reserved</p>
+		</div>
+	</footer>
+	
+
+	<!-- javascript -->
+	<script src="dist/site.min.js"></script>
+	
+</body>
+</html>

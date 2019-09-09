@@ -1,0 +1,131 @@
+.main-footer {
+    padding: 130px 0;
+    background-color: $blue-dark;
+
+    @include mq($tablet-l) {
+        padding: 50px 0;
+    }
+}
+
+.main-footer__item {
+    .icon {
+        color: $white;
+        margin-right: 20px;
+        font-size: 16px; 
+    }
+
+    @include mq($tablet-l) {
+        margin-bottom: 35px;
+    }
+}
+
+.main-footer__item-title {
+    color: $white;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+
+    @include mq($phone) {
+       font-size: 16px;
+       margin-bottom: 20px;
+    }
+}
+
+.main-footer__item-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: rgba($white, 0.7);
+    margin-bottom: 20px;
+
+    @include mq($phone) {
+        font-size: 14px;
+    }
+}
+
+.main-footer__item-text--sm {
+    margin-bottom: 70px;
+    max-width: 213px;
+    width: 100%;
+
+    @include mq($tablet-l) {
+       margin-bottom: 30px;
+    }
+    
+    @include mq($phone) {
+        max-width: 100%;
+    }
+}
+
+.main-footer__item-text--icon {
+    display: flex;
+    align-items: baseline;
+}
+
+.main-footer__item-media {
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.main-footer__item-icon {
+    font-size: 26px;
+    color: $white;
+    margin-right: 11px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .05);
+    padding: 13px;
+
+    @include mq($tablet-l) {
+        font-size: 20px;
+    }
+    
+    @include mq($phone) {
+        font-size: 15px;
+    }
+}
+
+.main-footer__item-list {
+    > li  > a {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.8;
+        padding: 10px 0;
+        display: block;
+        color: rgba($white, 0.7);
+        transition: $dur $ease;
+
+        &:hover {
+            color: $white;
+        }
+    }
+    @include mq($phone) {
+        > li  > a {
+            font-size: 14px;
+        }
+    }
+}
+
+.main-footer__item-link {
+    font-size: 16px;
+    font-weight: 300;
+    color: $white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-footer__bottom {
+    color: rgba($white, 0.7);
+    text-align: center;
+    font-size: 16px;
+    margin-top: 90px;
+
+    @include mq($phone) {
+       font-size: 14px;
+       margin-top: 50px;
+    }
+}

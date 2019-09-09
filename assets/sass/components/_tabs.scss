@@ -1,0 +1,73 @@
+.tabs {
+    padding: 100px 0;
+
+    @include mq($phone) {
+       padding: 50px 0;
+    }
+}
+
+.tabs__wrapp {
+    margin-left: 20px;
+}
+
+.tabs__info {
+    margin-bottom: 55px;
+    cursor: pointer;
+
+    .current {
+        background-color: $sky;
+        border-radius: 30px;
+        padding: 10px 15px;
+        color: $white;
+    }
+
+    > ul >li {
+        &:last-child {
+           margin-right: 0;
+        }
+    }
+
+    @include mq($tablet-l) {
+        margin-top: 30px;
+    }
+
+    @include mq($phone) {
+        margin-bottom: 30px;
+    }
+}
+
+.tab-link {
+    font-size: 18px;
+    color: $grey70;
+    display: inline-block;
+    margin-right: 30px;
+
+    @include mq($phone) {
+      font-size: 14px;
+      margin-right: 20px;
+    }
+}
+
+.tab-content {
+    max-width: 460px;
+    width: 100%;
+    display: none;
+
+    &.current {
+        display: block;
+    }
+
+    @include mq($tablet-l) {
+       max-width: 100%;
+    }
+}
+
+.tab-content__title {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 33px;
+
+    @include mq($phone) {
+        font-size: 20px;
+    }
+}

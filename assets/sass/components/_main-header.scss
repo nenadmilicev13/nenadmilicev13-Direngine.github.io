@@ -1,0 +1,124 @@
+.main-header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    transition: $dur $ease;
+    top: 0;
+
+    @include mq($tablet-l) {
+       padding: 20px 0;
+       background-color: $black;
+       position: relative;
+    }
+}
+
+.header-sticky {
+    background-color: $white;
+    box-shadow: 0 0 10px 0 rgba($black, .1);
+    position: fixed;
+
+    .main-header__logo {
+        color: $black;
+    }
+
+    .main-nav__list {
+    
+        > li > a {
+            color: $black;
+        }
+
+        > li .active {
+            color: $red;
+        }
+
+        > li .nav-btn {
+           background-color: $red;
+           color: $white;
+        }
+    }
+    .menu-btn {
+    
+        &::after,
+        &::before,
+        span {
+            background-color: $black;
+        }
+    
+        &::before {
+            right: -6px;
+            bottom: 0;
+            width: 25px;
+        }
+    
+        span {
+            &::before {
+                background-color: $black;
+            }
+        }
+    }
+}
+
+.main-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mq($tablet-l) {
+       display: block;
+    }
+}
+
+.main-nav {
+    @include mq($tablet-l) {
+        display: none;
+    }
+}
+
+.main-header__logo {
+    font-size: 20px;
+    color: $white;
+    font-weight: 700;
+}
+
+.main-nav__list {
+    > li {
+        display: inline-block;
+        padding: 30px 20px;
+    }
+
+    > li > a {
+        font-size: 14px;
+        color: $white;
+    }
+
+    > li .active {
+        color: $grey70;
+        transition: $dur $ease;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    > li .nav-btn {
+      border: 1px solid rgba($white, 0.4);
+      padding: 10px 20px;
+      border-radius: 60px;
+      transition: $dur $ease;
+
+      &:hover {
+          background-color: $red;
+      }
+    }
+
+    @include mq($tablet-l) {
+        > li {
+            display: block;
+            padding: 16px 10px;
+        }
+
+        > li .nav-btn {
+           display: block;
+        }
+    }
+}
