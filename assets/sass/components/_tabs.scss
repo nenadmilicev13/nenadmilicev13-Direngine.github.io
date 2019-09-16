@@ -8,6 +8,10 @@
 
 .tabs__wrapp {
     margin-left: 20px;
+
+    @include mq($phone) {
+       margin-left: 0;
+    }
 }
 
 .tabs__info {
@@ -44,7 +48,7 @@
 
     @include mq($phone) {
       font-size: 14px;
-      margin-right: 20px;
+      margin-right: 10px;
     }
 }
 

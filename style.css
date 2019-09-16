@@ -5472,6 +5472,12 @@ img {
   margin-left: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .tabs__wrapp {
+    margin-left: 0;
+  }
+}
+
 .tabs__info {
   margin-bottom: 55px;
   cursor: pointer;
@@ -5510,7 +5516,7 @@ img {
 @media screen and (max-width: 767px) {
   .tab-link {
     font-size: 14px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }
 
