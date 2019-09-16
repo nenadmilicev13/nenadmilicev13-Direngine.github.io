@@ -33,7 +33,6 @@
 
     @include mq($tablet-l) {
         margin-bottom: 25px;
-        min-height: auto;
     }
 
     @include mq($phone) {

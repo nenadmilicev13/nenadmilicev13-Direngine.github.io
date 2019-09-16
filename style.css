@@ -4346,7 +4346,6 @@ img {
 @media screen and (max-width: 1199px) {
   .tile-item {
     margin-bottom: 25px;
-    min-height: auto;
   }
 }
 
