@@ -30,7 +30,6 @@
     text-transform: capitalize;
 
     @include mq($tablet-l) {
-       padding: 18px 10px;
        margin-top: 20px;
     }
 
