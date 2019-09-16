@@ -4271,6 +4271,7 @@ img {
   color: #b3b3b3;
   padding: 20px;
   display: block;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 1199px) {

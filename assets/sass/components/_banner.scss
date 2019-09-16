@@ -163,6 +163,7 @@
     color: $grey70;
     padding: 20px;
     display: block;
+    background-color: $white;
 
     @include mq($tablet-l) { 
         margin-top: 20px;
