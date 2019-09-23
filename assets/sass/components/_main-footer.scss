@@ -1,7 +1,10 @@
 .main-footer {
     padding: 130px 0;
     background-color: $blue-dark;
-
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
     @include mq($tablet-l) {
         padding: 50px 0;
     }

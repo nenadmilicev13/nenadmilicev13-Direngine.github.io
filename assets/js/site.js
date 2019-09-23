@@ -6,6 +6,7 @@ import Accordion from './_site/accordion';
 import DatePicker from './_site/datePicker';
 import RangeSlider from './_site/rangeSlider';
 import NavBtn from './_site/navBtn';
+import FooterFix from './_site/footerFix';
 
 jQuery(function () {
 	// Slick Slider
@@ -28,6 +29,9 @@ jQuery(function () {
 
 	// NavBtn
 	NavBtn.init();
+
+	// FooterFix
+	FooterFix.init();
 
 	console.log('hello');
 });

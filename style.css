@@ -3916,6 +3916,13 @@ img {
 /*--------------------------------------------------------------
 # Components / Templates
 --------------------------------------------------------------*/
+.main-content {
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 700px;
+  z-index: 2;
+}
+
 .main-header {
   position: fixed;
   width: 100%;
@@ -5293,6 +5300,9 @@ img {
 .main-footer {
   padding: 130px 0;
   background-color: #222831;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 1199px) {
